@@ -1,0 +1,13 @@
+/* Nav name */
+.neon-texts {
+  color: #00ffd5;
+   text-shadow: 0 0 6px #33d5ba;
+   font-family: "Orbitron", sans-serif;
+  letter-spacing: 4px;
+  font-size: 27px;
+}
+@media (max-width: 768px) {
+    .neon-texts{
+         font-size: 20px;
+    }
+}
