@@ -36,52 +36,93 @@ function Skills() {
     { name: "GitHub", img: github },
   ];
 
-  const SkillBox = ({ title, data }) => (
-    <div className="border border-[#00ffd5] rounded-2xl p-6 shadow-[0_0_10px_#00ffd5]">
-      <h2 className="text-xl font-semibold text-[#00ffd5] mb-6 text-center">
-        {title}
-      </h2>
-
-      <div className="grid grid-cols-3 gap-6 place-items-center">
-        {data.map((skill, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center hover:scale-110 transition duration-300"
-          >
-            <img
-              src={skill.img}
-              alt={skill.name}
-              className="w-12 h-12 object-contain mb-2"
-            />
-            <p className="text-gray-300 text-sm">{skill.name}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-
   return (
     <section
       id="skills"
-      className="min-h-screen bg-[#02131c] px-6 md:px-16 lg:px-24 py-16 flex flex-col justify-center"
-    >
-      {/* Main Heading */}
-      <h1 className="text-3xl md:text-4xl font-bold text-center text-[#00ffd5] mb-6">
+      className="min-h-screen bg-[#02131c] px-6 md:px-16 lg:px-24 py-16">
+
+      {/* Heading */}
+      <h1 className="text-3xl md:text-4xl font-bold text-center text-[#00ffd5] mb-10">
         My Skills
       </h1>
 
-      {/* FIRST ROW → Frontend Full Width */}
-      <div className="mb-10">
-        <SkillBox title="Frontend" data={frontend} />
+
+      {/* FRONTEND */}
+      <div className="border border-[#00ffd5] rounded-2xl p-6 shadow-[0_0_10px_#00ffd5] mb-10">
+        <h2 className="text-xl text-center text-[#00ffd5] mb-6">Frontend</h2>
+
+        <div className="grid grid-cols-3 gap-6 place-items-center">
+          {frontend.map((item, i) => (
+            <div
+              key={i}
+              className="flex flex-col items-center hover:scale-110 transition"
+            >
+              <img src={item.img} className="w-12 mb-2" />
+              <p className="text-gray-300 text-sm">{item.name}</p>
+            </div>
+          ))}
+        </div>
       </div>
 
-      {/* SECOND ROW → Backend | Database | Tools */}
+
+      {/* BACKEND */}
       <div className="grid md:grid-cols-3 gap-8">
-        <SkillBox title="Backend" data={backend} />
-        <SkillBox title="Database & Cloud" data={database} />
-        <SkillBox title="Tools" data={tools} />
-      </div>
 
+        <div className="border border-[#00ffd5] rounded-2xl p-6 shadow-[0_0_10px_#00ffd5]">
+          <h2 className="text-xl text-center text-[#00ffd5] mb-6">Backend</h2>
+
+          <div className="grid grid-cols-3 gap-6 place-items-center">
+            {backend.map((item, i) => (
+              <div
+                key={i}
+                className="flex flex-col items-center hover:scale-110 transition"
+              >
+                <img src={item.img} className="w-12 mb-2  invert " />
+                <p className="text-gray-300 text-sm">{item.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+
+        {/* DATABASE */}
+        <div className="border border-[#00ffd5] rounded-2xl p-6 shadow-[0_0_10px_#00ffd5]">
+          <h2 className="text-xl text-center text-[#00ffd5] mb-6">
+            Database & Cloud
+          </h2>
+
+          <div className="grid grid-cols-3 gap-6 place-items-center">
+            {database.map((item, i) => (
+              <div
+                key={i}
+                className="flex flex-col items-center hover:scale-110 transition"
+              >
+                <img src={item.img} className="w-12 mb-2 " />
+                <p className="text-gray-300 text-sm">{item.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+
+        {/* TOOLS */}
+        <div className="border border-[#00ffd5] rounded-2xl p-6 shadow-[0_0_10px_#00ffd5]">
+          <h2 className="text-xl text-center text-[#00ffd5] mb-6">Tools</h2>
+
+          <div className="grid grid-cols-3 gap-6 place-items-center">
+            {tools.map((item, i) => (
+              <div
+                key={i}
+                className="flex flex-col items-center hover:scale-110 transition"
+              >
+                <img src={item.img} className="w-12 mb-2  invert" />
+                <p className="text-gray-300 text-sm">{item.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
     </section>
   );
 }

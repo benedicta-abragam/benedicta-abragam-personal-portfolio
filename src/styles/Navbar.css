@@ -1,11 +1,12 @@
 /* Nav name */
 .neon-text {
   color: #00ffd5;
-   text-shadow: 0 0 6px #33d5ba;
-   font-family: "Orbitron", sans-serif;
+  text-shadow: 0 0 6px #33d5ba;
+  font-family: "Orbitron", sans-serif;
   letter-spacing: 2px;
   font-size: 20px;
 }
+
 /* nav-menu */
 .nav-link {
   color: #c7fdf0;
@@ -15,13 +16,12 @@
   padding: 5px 14px;
   border-radius: 20px;
 }
-.nav-link:hover{
- color: #00ffd5;
-border: solid  1px;
-background-color: rgba(22, 55, 73, 0.4);
+.nav-link:hover {
+  color: #00ffd5;
+  border: solid 1px;
+  background-color: rgba(22, 55, 73, 0.4);
 }
 
-/* mobile-menu */
 /* Overlay background */
 .mobile-overlay {
   position: fixed;
@@ -31,7 +31,7 @@ background-color: rgba(22, 55, 73, 0.4);
   opacity: 0;
   pointer-events: none;
   transition: 0.3s ease;
-  z-index: 10;
+  z-index: 40;
 }
 .mobile-overlay.show {
   opacity: 1;
@@ -49,13 +49,14 @@ background-color: rgba(22, 55, 73, 0.4);
   background: #050f14;
   padding: 30px;
   transition: 0.4s ease;
-  z-index: 20;
+  z-index: 50;
   display: flex;
   flex-direction: column;
 }
 .mobile-menu.open {
   right: 0;
 }
+
 .mobile-menu ul {
   margin-top: 40px;
   display: flex;
@@ -63,10 +64,7 @@ background-color: rgba(22, 55, 73, 0.4);
   align-items: center;
   gap: 35px;
 }
-.mobile-link{
-  font-size: 18px;
-  padding: 5px 80px;
-}
+
 .close-icon {
   align-self: flex-end;
   font-size: 28px;
@@ -74,6 +72,7 @@ background-color: rgba(22, 55, 73, 0.4);
   cursor: pointer;
 }
 
+/* hide mobile on desktop */
 @media (min-width: 768px) {
   .mobile-menu,
   .mobile-overlay {
@@ -85,8 +84,6 @@ background-color: rgba(22, 55, 73, 0.4);
 .icon {
   transition: 0.3s ease;
 }
-
 .icon:hover {
- transform: scale(1.2) rotate(90deg);
+  transform: scale(1.2) rotate(90deg);
 }
-
