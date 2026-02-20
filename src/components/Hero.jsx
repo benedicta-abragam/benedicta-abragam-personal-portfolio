@@ -5,43 +5,51 @@ import "../styles/Hero.css"
 
 function Hero() {
   return (
-    <section
-      id="home"
-      className="min-h-screen flex items-center bg-[#02131c] px-6 md:px-16 lg:px-24"
-    >
-      <div className="w-full max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-
+    <section id="home"
+      className="min-h-screen flex items-center bg-[#02131c] px-6 md:px-20 lg:px-24">
+      <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row justify-around items-center">
         {/* LEFT CONTENT */}
-        <div className="space-y-6 ">
-
-          <p className="text-gray-400 text-base md:text-lg">
+        <div className=" md:space-y-6">
+          <p className="text-gray-400 text-base md:text-lg mb-1 md:mb-0">
             Hi there, I'm
           </p>
+          {/* Name + Profile */}
+          <div className="flex items-center justify-between md:block mb-2 md:mb-0">            {/* Name */}
+            <h1 className="w-[65%] sm:text-4xl md:text-5xl font-bold neon-texts">
+              Benedicta
+            </h1>
 
-          {/* Name */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold neon-texts">
-            Benedicta
-          </h1>
+            {/* MOBILE PROFILE */}
+            <div className="md:hidden relative">
+
+              {/* Neon Glow */}
+              <div className="absolute inset-0 rounded-full bg-[#00ffd5] blur-xl opacity-30"></div>
+
+              <img
+                src={profile}
+                alt="Benedicta"
+                className="relative w-20 h-20 rounded-full object-cover shadow-[0_0_15px_#00ffd5]" />
+            </div>
+
+          </div>
 
           {/* Typing */}
-          <div className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#00ffd5]">
-            <TypeAnimation
-              sequence={[
-                "Frontend Developer",
-                2000,
-                "React Developer",
-                2000,
-                "Full Stack Developer",
-                2000,
-              ]}
-              speed={40}
-              repeat={Infinity}
-            />
+          <div className="sm:text-2xl md:text-3xl font-semibold text-[#00ffd5] mb-2 md:mb-0 min-h-[28px]">            <TypeAnimation
+            sequence={[
+              "Frontend Developer",
+              2000,
+              "React Developer",
+              2000,
+              "Full Stack Developer",
+              2000,
+            ]}
+            speed={40}
+            repeat={Infinity}
+          />
           </div>
 
           {/* Professional Fresher Description */}
-          <p className="text-gray-400 leading-relaxed max-w-xl text-sm md:text-base">
-            Passionate Full Stack Developer with strong skills in React, Node.js, and MongoDB, eager to create scalable and performance-driven web solutions.
+          <p className="text-gray-400 leading-relaxed max-w-xl text-sm md:text-base mt-2 md:mt-0">            Passionate Full Stack Developer with strong skills in React, Node.js, and MongoDB, eager to create scalable and performance-driven web solutions.
           </p>
 
           {/* Buttons */}
@@ -59,11 +67,16 @@ function Hero() {
               </button>
             </NavLink>
 
+            <button className="px-6 py-3 border border-[#00ffd5] text-[#00ffd5] rounded-full hover:bg-[#00ffd5] hover:text-black transition">
+              Resume
+            </button>
+
+
           </div>
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="flex justify-center md:justify-end">
+        <div className="hidden md:flex justify-center md:justify-end">
           <div className="relative">
 
             {/* Neon Glow Circle */}
@@ -72,7 +85,7 @@ function Hero() {
             <img
               src={profile}
               alt="Benedicta"
-              className="relative w-52 sm:w-64 md:w-80 rounded-full object-cover  shadow-[0_0_10px_#00ffd5]"
+              className="relative w-28 sm:w-40 md:w-80 rounded-full object-cover shadow-[0_0_10px_#00ffd5]"
             />
           </div>
         </div>
