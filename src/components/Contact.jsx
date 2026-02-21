@@ -31,17 +31,17 @@ function Contact() {
           {/* Contact info */}
           <div className="space-y-4 text-gray-300">
 
-            <p className="flex justify-center items-center gap-3">
+            <p className="flex justify-center items-center gap-2">
               <FaMapMarkerAlt className="text-[#00ffd5]" />
               Chennai, Tamil Nadu (Open to relocate)
             </p>
 
-            <p className="flex justify-center items-center gap-3">
+            <p className="flex justify-center items-center gap-2">
               <FaEnvelope className="text-[#00ffd5]" />
               benedictaabragam@gmail.com
             </p>
 
-            <p className="flex justify-center items-center gap-3">
+            <p className="flex justify-center items-center gap-2">
               <FaPhoneAlt className="text-[#00ffd5]" />
               +91 6374196066
             </p>

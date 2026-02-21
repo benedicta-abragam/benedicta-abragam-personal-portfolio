@@ -9,7 +9,7 @@ function Navbar() {
   }
 
   return (
-    <nav className="fixed top-0 w-full h-[60px] flex justify-between items-center px-6 md:px-20 bg-[#050f14] z-50">
+    <nav className="fixed top-0 w-full h-[60px] flex justify-between shadow-[0_0_6px_rgba(0,255,213,0.5)]  items-center px-6 md:px-20 bg-[#050f14] z-50">
 
       {/* LOGO */}
       <div className="font-semibold neon-text">
