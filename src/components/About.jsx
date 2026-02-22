@@ -20,12 +20,12 @@ function About() {
           {/* LEFT IMAGE */}
           <div className="flex justify-center">
             <div className="relative">
-              <div className="absolute inset-1 rounded-full bg-[#00ffd5] blur-3xl opacity-20"></div>
+              <div className="absolute inset-0 rounded-full bg-[#00ffd5] blur-3xl opacity-20"></div>
 
               <img
                 src={myphoto}
                 alt="Benedicta"
-                className="relative w-64 md:w-80 rounded-full object-cover"
+                className=" float-img relative w-64 md:w-80 rounded-full object-cover"
               />
             </div>
           </div>

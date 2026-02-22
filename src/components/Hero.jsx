@@ -9,7 +9,7 @@ function Hero() {
       <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row justify-center  items-center">
         {/* LEFT CONTENT */}
         <div className=" md:space-y-6">
-          <p className="text-gray-400  text-xl md:text-2xl  md:mb-8">
+          <p className="text-gray-400 text-xl md:text-2xl  md:mb-8">
             Hi there, I'm
           </p>
           {/* Name + Profile */}
@@ -22,13 +22,10 @@ function Hero() {
             {/* MOBILE PROFILE */}
             <div className="md:hidden relative">
 
-              {/* Neon Glow */}
-              <div className="absolute inset-0 rounded-full bg-[#00ffd5] blur-xl opacity-30"></div>
-
               <img
                 src={profile}
                 alt="Benedicta"
-                className="relative w-30 h-30 rounded-full object-cover shadow-[0_0_15px_#00ffd5]" />
+                className="relative w-30 h-30  rounded-full object-cover shadow-[0_0_20px_#00ffd5]" />
             </div>
 
           </div>
@@ -58,19 +55,21 @@ function Hero() {
           <div className="flex flex-wrap gap-6 md:gap-5 ">
 
             <a href="#contact">
-              <button className="px-6 py-3 bg-[#00ffd5] text-black rounded-full font-semibold hover:bg-[#0b1f2a] hover:text-[#00ffd5] ">
+              <button className="neon-btn px-6 py-3 bg-[#00ffd5] text-black rounded-full text-xl md:text-base font-semibold hover:bg-[#0b1f2a] hover:text-[#00ffd5]">
                 Hire Me
               </button>
             </a>
 
             <a href="#projects">
-              <button className="px-6 py-3 border  border-[#00ffd5] text-[#00ffd5] rounded-full hover:bg-[#00ffd5] hover:text-black">
+              <button className="neon-btn px-6 py-3 border border-[#00ffd5] text-[#00ffd5] text-xl md:text-base rounded-full hover:bg-[#00ffd5] hover:text-black">
                 View Projects
               </button>
             </a>
+
             <a
               href="/resume.pdf"
-              className="px-6 py-3  bg-[#00ffd5] text-black rounded-full font-semibold hover:bg-[#0b1f2a] hover:text-[#00ffd5] transition">
+              className="neon-btn px-6 py-3 bg-[#00ffd5] text-black rounded-full font-semibold text-xl md:text-base hover:bg-[#0b1f2a] hover:text-[#00ffd5] transition"
+            >
               Download Resume
             </a>
 
@@ -83,13 +82,11 @@ function Hero() {
         <div className="hidden md:flex justify-end">
           <div className="relative">
 
-            {/* Neon Glow Circle */}
-            <div className="absolute inset-0 rounded-full bg-[#00ffd5] blur-3xl opacity-30"></div>
-
+       
             <img
               src={profile}
               alt="Benedicta"
-              className="relative w-28 sm:w-40 md:w-80  md:mb-10 rounded-full shadow-[0_0_10px_#00ffd5]"
+              className="relative w-28 sm:w-40 md:w-80  md:mb-10 rounded-full shadow-[0_0_35px_#00ffd5]"
             />
           </div>
         </div>
