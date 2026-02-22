@@ -27,18 +27,12 @@ function Navbar() {
 
       {/* Mobile icon */}
       <div
-        className="md:hidden flex items-center text-2xl cursor-pointer"
+        className="md:hidden flex text-2xl cursor-pointer"
         onClick={() => setOpen(true)}
       >
         <i className="fa-solid fa-bars text-[#00ffd5] icon"></i>
       </div>
-
-      {/* Overlay */}
-      <div
-        className={`mobile-overlay ${open ? "show" : ""}`}
-        onClick={handleClose}
-      ></div>
-
+      
       {/* Mobile menu */}
       <div className={`mobile-menu ${open ? "open" : ""}`}>
         <div className="close-icon" onClick={handleClose}>

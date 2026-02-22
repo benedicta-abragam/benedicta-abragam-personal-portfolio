@@ -50,12 +50,12 @@ function Hero() {
           </div>
 
           {/* Professional Fresher Description */}
-          <p className="text-gray-400 leading-relaxed max-w-xl  md:text-base mb-7 mt-5 md:mt-0">
+          <p className="text-gray-400 leading-8 max-w-xl  md:text-base mb-7 mt-13 md:mt-0">
             Passionate Full Stack Developer with strong skills in React, Node.js, and MongoDB, eager to create scalable and performance-driven web solutions.
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-wrap gap-5 ">
+          <div className="flex flex-wrap gap-6 md:gap-5 ">
 
             <a href="#contact">
               <button className="px-6 py-3 bg-[#00ffd5] text-black rounded-full font-semibold hover:bg-[#0b1f2a] hover:text-[#00ffd5] ">

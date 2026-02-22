@@ -22,21 +22,6 @@
   background-color: rgba(22, 55, 73, 0.4);
 }
 
-/* Overlay background */
-.mobile-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(5px);
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.3s ease;
-  z-index: 40;
-}
-.mobile-overlay.show {
-  opacity: 1;
-  pointer-events: auto;
-}
 
 /* Menu */
 .mobile-menu {

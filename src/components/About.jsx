@@ -4,7 +4,7 @@ function About() {
   return (
     <section
       id="about"
-      className=" scroll-mt-20 min-h-screen bg-[#02131c] px-6 md:px-16 lg:px-24  flex items-center">
+      className="  min-h-screen bg-[#02131c] px-6 md:px-16 lg:px-24  flex items-center">
       <div className="max-w-7xl mx-auto w-full">
 
         {/* HEADING */}
