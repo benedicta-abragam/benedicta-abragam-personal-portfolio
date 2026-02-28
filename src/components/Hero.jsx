@@ -31,7 +31,7 @@ function Hero() {
           </div>
 
           {/* Typing */}
-          <div className=" text-2xl  md:text-3xl font-semibold text-[#00ffd5] mb-7 md:mb-8 min-h-[28px]">
+          <div className=" md:text-3xl font-semibold text-[#00ffd5] mb-7 md:mb-8 min-h-[28px]">
             <TypeAnimation
               sequence={[
                 "Frontend Developer",
@@ -68,9 +68,10 @@ function Hero() {
 
             <a
               href="/resume.pdf"
+             
               className="neon-btn px-6 py-3 bg-[#00ffd5] text-black rounded-full font-semibold text-xl md:text-base hover:bg-[#0b1f2a] hover:text-[#00ffd5] transition"
             >
-              Download Resume
+             Resume
             </a>
 
 
@@ -82,7 +83,7 @@ function Hero() {
         <div className="hidden md:flex justify-end">
           <div className="relative">
 
-       
+
             <img
               src={profile}
               alt="Benedicta"
