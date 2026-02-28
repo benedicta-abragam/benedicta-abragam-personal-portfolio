@@ -31,7 +31,7 @@ function Hero() {
           </div>
 
           {/* Typing */}
-          <div className=" md:text-3xl font-semibold text-[#00ffd5] mb-7 md:mb-8 min-h-[28px]">
+          <div className=" text-xl md:text-3xl font-semibold text-[#00ffd5] mb-7 md:mb-8 min-h-[28px]">
             <TypeAnimation
               sequence={[
                 "Frontend Developer",

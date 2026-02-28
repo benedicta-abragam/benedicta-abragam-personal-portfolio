@@ -1,42 +1,42 @@
-import { useState } from "react";
+import greenden from "../assets/projects/Greenden.jpeg";
+import novaverse from "../assets/projects/novaverse.jpeg";
+import weatherimg from "../assets/projects/weatherapp.jpeg";
 
 function Projects() {
 
   /* ---------- ALL PROJECTS ---------- */
+  /* ---------- ALL PROJECTS ---------- */
   const projects = [
+    /* ---------- FEATURED ---------- */
     {
-      title: "Bulk Mail System",
-      desc: "Send bulk emails with Excel upload and SMTP.",
-      tech: ["React", "Node", "MongoDB", "Express"],
+      title: "E-Commerce MERN Website",
+      desc: "Full-stack e-commerce application with authentication, cart, and order management.",
+      tech: ["React", "Node.js", "MongoDB", "Express"],
       category: "featured",
-      live: "https://bulkmail-frontend-delta.vercel.app/",
-      github: "https://github.com/benedicta-abragam/bulkmail-frontend",
+      image: novaverse,
+      live: "https://e-commerce-mern-zeta-six.vercel.app/",
+      github: "https://github.com/benedicta-abragam/E-Commerce-MERN-",
     },
     {
       title: "Weather App",
-      desc: "Real-time weather forecast using API.",
-      tech: ["React", "API"],
+      desc: "Real-time weather forecast using external API integration.",
+      tech: ["React", "API", "CSS"],
       category: "featured",
+      image: weatherimg,
       live: "https://weather-kohl-ten-23.vercel.app/",
       github: "https://github.com/benedicta-abragam/Weather",
     },
     {
-      title: "Quiz App",
-      desc: "Interactive quiz with score tracking.",
-      tech: ["React"],
+      title: "Greenden Website Clone",
+      desc: "Frontend plant store clone with search functionality.",
+      tech: ["HTML", "Tailwind CSS", "JavaScript"],
       category: "featured",
-      live: "https://quizz-app-nu-nine.vercel.app/",
-      github: "https://github.com/benedicta-abragam/Quizz-App",
+      image: greenden,
+      live: "https://benedicta-abragam.github.io/Greenden-tailwind/product.html",
+      github: "https://github.com/benedicta-abragam/Greenden-tailwind",
     },
 
     /* ---------- OTHER ---------- */
-    {
-      title: "Netflix Login",
-      tech: ["React"],
-      category: "other",
-      live: "https://netflix-style-login-clone.vercel.app/",
-      github: "https://github.com/benedicta-abragam/netflix-style-login-clone",
-    },
     {
       title: "Perfume Website",
       tech: ["React"],
@@ -45,27 +45,48 @@ function Projects() {
       github: "https://github.com/benedicta-abragam/perfumy-react",
     },
     {
-      title: "Student Favorites",
+      title: "Student Favorites List",
       tech: ["React"],
       category: "other",
       live: "https://student-list-react-jet.vercel.app/favorites",
       github: "https://github.com/benedicta-abragam/Student-list-React",
     },
+    {
+      title: "Quiz App",
+      tech: ["React"],
+      category: "other",
+      live: "https://quizz-app-nu-nine.vercel.app/results",
+      github: "https://github.com/benedicta-abragam/Quizz-App",
+    },
+    {
+      title: "Udemy Homepage Clone",
+      tech: ["HTML", "CSS"],
+      category: "other",
+      live: "https://benedicta-abragam.github.io/Udemy-Homepage-Clone/",
+      github: "https://github.com/benedicta-abragam/Udemy-Homepage-Clone",
+    },
 
     /* ---------- MINI ---------- */
     {
-      title: "Counter App",
-      tech: ["React"],
+      title: "Registration Form with Validation",
+      tech: ["HTML", "JavaScript"],
       category: "mini",
-      live: "https://react-counter-98cc.vercel.app/",
-      github: "https://github.com/benedicta-abragam/React-Counter",
+      live: "https://benedicta-abragam.github.io/Registration-Form-with-Validation/",
+      github: "https://github.com/benedicta-abragam/Registration-Form-with-Validation",
     },
     {
-      title: "Random Generator",
-      tech: ["React"],
+      title: "Character Limit Indicator",
+      tech: ["HTML", "JavaScript"],
       category: "mini",
-      live: "https://react-random-number-generator-five.vercel.app/",
-      github: "https://github.com/benedicta-abragam/React-Random-Number-Generator",
+      live: "https://benedicta-abragam.github.io/Character-limit-indicator/",
+      github: "https://github.com/benedicta-abragam/Character-limit-indicator",
+    },
+    {
+      title: "Nosta Website Clone",
+      tech: ["HTML", "CSS"],
+      category: "mini",
+      live: "https://benedicta-abragam.github.io/Nosta-Website-clone/",
+      github: "https://github.com/benedicta-abragam/Nosta-Website-clone",
     },
   ];
 
@@ -97,9 +118,11 @@ function Projects() {
             hover:scale-[1.02] transition duration-300">
 
             {/* IMAGE */}
-            <div className="bg-[#050f14] rounded-xl h-56 flex items-center justify-center text-gray-500">
-              Project Image
-            </div>
+            <img
+              src={item.image}
+              alt={item.title}
+              className="rounded-xl h-56 w-full object-cover"
+            />
 
             {/* CONTENT */}
             <div>
