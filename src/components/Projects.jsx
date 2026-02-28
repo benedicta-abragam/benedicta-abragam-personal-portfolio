@@ -113,7 +113,7 @@ function Projects() {
         {featured.map((item, i) => (
           <div
             key={i}
-            className="grid md:grid-cols-2 gap-10 bg-white/5 border border-[#00ffd5]/40 
+            className="grid md:grid-cols-2 gap-6 md:gap-10  bg-white/5 border border-[#00ffd5]/40 
             rounded-2xl p-8 shadow-[0_0_20px_#00ffd5]
             hover:scale-[1.02] transition duration-300">
 
@@ -121,7 +121,7 @@ function Projects() {
             <img
               src={item.image}
               alt={item.title}
-              className="rounded-xl h-56 w-full object-cover"
+             className="rounded-xl w-full h-auto md:h-56 object-cover"
             />
 
             {/* CONTENT */}
